@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pessoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Pessoas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lista-pessoas.html">Lista de Pessoas</a></li>
+                <li><a href="arvore.html">Árvore</a></li>
+                <li><a href="cadastro-usuarios.html">Cadastro de Usuários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Membros da Família</h2>
+            <ul>
+                <li><button onclick="expandir('erika')">Erika - Mãe</button></li>
+                <li><button onclick="expandir('cida')">Cida - Avó Materna</button></li>
+                <li><button onclick="expandir('jose')">José Adão - Avô Materno</button></li>
+                <!-- Adicione mais membros aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Árvore Genealógica do Luar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

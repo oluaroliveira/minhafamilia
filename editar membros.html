@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Membro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Edição de Membro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lista-pessoas.html">Lista de Pessoas</a></li>
+                <li><a href="arvore.html">Árvore</a></li>
+                <li><a href="cadastro-usuarios.html">Cadastro de Usuários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Editar Membro</h2>
+            <form id="edicaoForm">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo">
+                    <option value="maeBiologica">Mãe Biológica</option>
+                    <option value="paiBiologico">Pai Biológico</option>
+                    <option value="paiAfetivo">Pai Afetivo</option>
+                </select>
+
+                <label for="nomeCompleto">Nome Completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" id="naturalidade" name="naturalidade" required>
+
+                <label for="cartorioRegistro">Cartório de Registro:</label>
+                <input type="text" id="cartorioRegistro" name="cartorioRegistro" required>
+
+                <label for="casado">É casado(a)?</label>
+                <input type="checkbox" id="casado" name="casado">
+
+                <div id="infoCasamento" style="display: none;">
+                    <label for="dataCasamento">Data de Casamento:</label>
+                    <input type="date" id="dataCasamento" name="dataCasamento">
+
+                    <label for="nomeNubente">Nome do(a) Nubente:</label>
+                    <input type="text" id="nomeNubente" name="nomeNubente">
+                </div>
+
+                <label for="falecido">É falecido(a)?</label>
+                <input type="checkbox" id="falecido" name="falecido">
+
+                <div id="infoObito" style="display: none;">
+                    <label for="dataObito">Data do Óbito:</label>
+                    <input type="date" id="dataObito" name="dataObito">
+                </div>
+
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="excluirMembro()">Excluir Membro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Árvore Genealógica do Luar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
